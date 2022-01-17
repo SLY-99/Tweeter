@@ -1,0 +1,88 @@
+.main{
+    
+    &__box{
+        display: flex;
+        position: relative;
+    }
+    &__mini-box{
+        display:flex;
+        flex-direction: column;
+        margin-left: 100px;
+        width: 80%;
+        flex-wrap: wrap;
+    }
+    &__img{
+        position: absolute;
+        left: 20px;
+    }
+    &__title{
+        margin: 0px;
+        margin-top: 12px;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 29px;
+        color: #828282;
+    }
+    &__input{
+        width: 550px;
+        min-height: 50px;
+        border: none;
+        padding-left: 10px;
+    }
+    &__picture{
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    &__pic{
+        cursor: pointer;
+    }
+    &__btn{
+        width: 108px;
+        height: 50px;
+        background: #1DA1F2;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.08);
+        border-radius: 120px;
+        border: none;
+        outline: none;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 100%;
+        color: #FFFFFF;
+        align-self: flex-end;
+        margin-bottom: 5px;
+    }
+    &__name{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+        color: #000000;
+        margin: 0px;
+    }
+    &__username{
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 24px;
+        color: #000000;
+    }
+    &__text{
+        margin: 0px;
+        margin-top: 5px;
+    }
+    &__delete{
+        width: 80px;
+        height: 30px;
+        background: #1DA1F2;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.08);
+        border-radius: 120px;
+        border: none;
+        outline: none;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 100%;
+        color: #FFFFFF;
+        align-self: flex-end;
+        margin-bottom: 5px;
+    }
+}

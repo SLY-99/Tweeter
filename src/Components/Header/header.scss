@@ -1,0 +1,30 @@
+.header{
+    
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        color: #000000;
+        padding: 20px 0px 20px 20px;
+        margin: 0px;
+    }
+    &__img{
+        padding: 20px 20px 20px 0px;
+        cursor: pointer;
+    }
+    &__select{
+        width: 50px;
+        border: 3px solid royalblue;
+        border-radius: 10px;
+        outline: royalblue;
+        font-weight: bold;
+        position: absolute;
+        right: 80px;
+    }
+}

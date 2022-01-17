@@ -1,0 +1,48 @@
+.tweets{
+    
+    &__wrapper{
+        position: relative;
+    }
+    &__box{
+        margin-left: 100px;
+        margin-top: 30px;
+    }
+    &__img{
+        position: absolute;
+        top: 0px;
+        left: 25px;
+    }
+    &__name{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+        color: #000000;
+        margin: 0px;
+    }
+    &__username{
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 24px;
+        color: #000000;
+    }
+    &__text{
+        margin: 0px;
+        margin-top: 5px;
+    }
+    &__icons{
+        width: 450px;
+        margin-top: 22px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__pic{
+        padding-right: 5px;
+        padding-bottom: 5px;
+        cursor: pointer;
+    }
+    &__kebab{
+        width: 530px;
+        margin-top: 15px;
+    }
+}

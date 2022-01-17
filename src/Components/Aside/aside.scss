@@ -1,0 +1,150 @@
+.aside{
+    
+    &__wrapper{
+        margin-top: 20px;
+    }
+    &__search{
+        width: 350px;
+        height: 55px;
+        background: #EFF3F4;
+        border-radius: 31px;
+        outline: none;
+        border: none;
+        position: relative;
+        padding-left: 50px;
+    }
+    &__search::placeholder{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        color: #5C6C79;
+    }
+    &__search::before{
+        content: url(../../Assets/Images/Icons/search-icon.svg);
+        position: absolute;
+        top: 0px;
+    }
+    &__box{
+        width: 353px;
+        height: 402px;
+        background: #F7F9F9;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        color: #000000;
+        margin: 0px;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    &__list{
+        list-style-type: none;
+        margin: 0px;
+        padding-left: 20px;
+    }
+    &__text{
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 21px;
+        color: #393B41;
+        opacity: 0.6;
+        margin: 0px;
+        margin-top: 20px;
+    }
+    &__sub-title{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 27px;
+        color: #000000;
+        margin: 0px;
+    }
+    &__tweets{
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 21px;
+        color: #393B41;
+        opacity: 0.6;
+        margin: 0px;
+    }
+    &__link{
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 100%;
+        color: #1DA1F2;
+        text-decoration: none;
+        margin: 0px;
+        display: inline-block;
+        padding-left: 20px;
+        padding-top: 30px;
+    }
+    
+    &__box2{
+        width: 353px;
+        height: 295px;
+        background: #F7F9F9;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+    &__title2{
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        color: #000000;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    &__mini-wrapper{
+        margin-top: 25px;
+        padding-left: 10px;
+        display: flex;
+    }
+    &__text-box{
+        margin-left: 15px;
+    }
+    &__name{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        color: #000000;
+        margin: 0px;
+    }
+    &__username{
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+        opacity: 0.6;
+        margin: 0px;
+    }
+    &__btn{
+        width: 90px;
+        height: 40px;
+        background: #000000;
+        border-radius: 50px;
+        color: #fff;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 100%;
+        margin: 0px;
+        margin-left: 30px;
+        outline: none;
+        border: none;
+    }
+    &__btn2{
+        width: 90px;
+        height: 40px;
+        background: #000000;
+        border-radius: 50px;
+        color: #fff;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 100%;
+        margin: 0px;
+        margin-left: 60px;
+        outline: none;
+        border: none;
+    }
+}

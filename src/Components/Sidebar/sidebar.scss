@@ -1,0 +1,56 @@
+.sidebar{
+    
+    &__wrapper{
+        margin-top: 31px;
+        padding-left: 30px;
+        padding-right: 10px;
+    }
+    &__box{
+        display: flex;
+        position: relative;
+        margin-top: 260px;
+        padding-bottom: 30px;
+    }
+    &__img{
+        width: 50px;
+        height: 50px;
+    }
+    &__text-wrapper{
+        margin-left: 10px;
+    }
+    &__text-wrapper::before{
+        content: url(../../Assets/Images/Icons/three-dot-icon.svg);
+        position: absolute;
+        top: 5px;
+        right: -10px;
+        cursor: pointer;
+    }
+    &__name{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 21px;
+        color: #000000;
+        margin: 0;
+    }
+    &__username{
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 21px;
+        color: #000000;
+        opacity: 0.6;
+        margin: 0;
+        cursor: pointer;
+    }
+    &__btn{
+        width: 220px;
+        height: 50px;
+        background: #1D9BF0;
+        border-radius: 27.5px;
+        outline: none;
+        border: none;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 24px;
+        color: #FFFFFF;
+    }
+}

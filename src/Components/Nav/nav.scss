@@ -1,0 +1,69 @@
+.nav{
+    
+    &__list{
+        list-style-type: none;
+        padding: 0px;
+        margin-top:50px;
+    }
+    &__item{
+        margin-bottom: 30px;
+        padding-left: 40px;
+        position: relative;
+        cursor: pointer;
+    }
+    &__item:nth-child(1)::before{
+        content: url(../../Assets/Images/Icons/home-icon.svg);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &__item:nth-child(2)::before{
+        content: url(../../Assets/Images/Icons/hashtag-icon.svg);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &__item:nth-child(3)::before{
+        content: url(../../Assets/Images/Icons/notification-icon.svg);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &__item:nth-child(4)::before{
+        content: url(../../Assets/Images/Icons/message-icon.svg);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &__item:nth-child(5)::before{
+        content: url(../../Assets/Images/Icons/bookmark-icon.svg);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &__item:nth-child(6)::before{
+        content: url(../../Assets/Images/Icons/list-icon.svg);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &__item:nth-child(7)::before{
+        content: url(../../Assets/Images/Icons/profile-icon.svg);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &__item:nth-child(8)::before{
+        content: url(../../Assets/Images/Icons/more-icon.svg);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &__link{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        color: #000000;
+        text-decoration: none;
+    }
+}
