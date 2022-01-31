@@ -8,10 +8,11 @@ import Stats from "../../Assets/Images/Icons/statistic-icon.svg";
 import Smiling from "../../Assets/Images/Icons/smiling-icon.svg";
 import Calendar from "../../Assets/Images/Icons/calendar-icon.svg";
 import Data from "../../Localization/data";
+import { Context } from '../../Context/localization'
 
-function Main({lang}) {
+function Main() {
 
-
+  const { state } = React.useContext(Context);
   const [todos , setTodos] = React.useState([]);
 
 
@@ -39,7 +40,7 @@ function Main({lang}) {
         <div className='main__box'>
             <img className='main__img' src={Bobur} alt="bobur" />
             <div className='main__mini-box'>
-                <p className='main__title'>{Data[lang].main.state}</p>
+                <p className='main__title'>{Data[state].main.state}</p>
                 <input className='main__input' type="text" onKeyUp={addTodo}/>
                 <picture className='main__picture'>
                     <img className='main__pic' src={Img} alt="img" />
@@ -60,7 +61,7 @@ function Main({lang}) {
               <div className='main__mini-box'>
               <h4 className='main__name'>Bobur <span className='main__username'>@bobur_mavlonov · 1m</span></h4>
               <p className='main__text'>{todo.text}</p>
-                  <button data-id = {todo.id} className='main__delete' onClick={handleDelete}>{Data[lang].main.delete}</button>
+                  <button data-id = {todo.id} className='main__delete' onClick={handleDelete}>{Data[state].main.delete}</button>
               </div>
              </div>
       </React.Fragment>

@@ -1,28 +1,24 @@
 import React from 'react';
 import '../Nav/nav.scss';
-import Home from "../../Assets/Images/Icons/home-icon.svg";
-import Explore from "../../Assets/Images/Icons/hashtag-icon.svg";
-import Notifications from "../../Assets/Images/Icons/notification-icon.svg";
-import Messages from "../../Assets/Images/Icons/message-icon.svg";
-import Bookmarks from "../../Assets/Images/Icons/bookmark-icon.svg";
-import Lists from "../../Assets/Images/Icons/list-icon.svg";
-import Profile from "../../Assets/Images/Icons/profile-icon.svg";
-import More from "../../Assets/Images/Icons/more-icon.svg";
 import Data from "../../Localization/data";
+import { Context } from '../../Context/localization';
+import {NavLink} from "react-router-dom";
 
 
-function Nav({lang}) {
+function Nav() {
+
+  const { state } = React.useContext(Context)
   return (
     <>
     <ul className='nav__list'>
-        <li className='nav__item'><a className='nav__link' href="#">{Data[lang].sidebar.nav.home}</a></li>
-        <li className='nav__item'><a className='nav__link' href="#">{Data[lang].sidebar.nav.explore}</a></li>
-        <li className='nav__item'><a className='nav__link' href="#">{Data[lang].sidebar.nav.notifications}</a></li>
-        <li className='nav__item'><a className='nav__link' href="#">{Data[lang].sidebar.nav.messages}</a></li>
-        <li className='nav__item'><a className='nav__link' href="#">{Data[lang].sidebar.nav.bookmarks}</a></li>
-        <li className='nav__item'><a className='nav__link' href="#">{Data[lang].sidebar.nav.lists}</a></li>
-        <li className='nav__item'><a className='nav__link' href="#">{Data[lang].sidebar.nav.profile}</a></li>
-        <li className='nav__item'><a className='nav__link' href="#">{Data[lang].sidebar.nav.more}</a></li>
+        <li className='nav__item'><NavLink to="/home" className='nav__link' href="#">{Data[state].sidebar.nav.home}</NavLink></li>
+        <li className='nav__item'><a className='nav__link' href="#">{Data[state].sidebar.nav.explore}</a></li>
+        <li className='nav__item'><a className='nav__link' href="#">{Data[state].sidebar.nav.notifications}</a></li>
+        <li className='nav__item'><a className='nav__link' href="#">{Data[state].sidebar.nav.messages}</a></li>
+        <li className='nav__item'><a className='nav__link' href="#">{Data[state].sidebar.nav.bookmarks}</a></li>
+        <li className='nav__item'><a className='nav__link' href="#">{Data[state].sidebar.nav.lists}</a></li>
+        <li className='nav__item'><NavLink to="/profile" className='nav__link' href="#">{Data[state].sidebar.nav.profile}</NavLink></li>
+        <li className='nav__item'><a className='nav__link' href="#">{Data[state].sidebar.nav.more}</a></li>
     </ul>
     </>
   );

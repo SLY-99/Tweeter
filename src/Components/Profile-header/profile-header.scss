@@ -1,0 +1,34 @@
+.head{
+    
+    &__wrapper{
+        display: flex;
+    }
+    &__box{
+        padding-top: 20px;
+        padding-bottom: 15px;
+        margin-left: 40px;
+    }
+    &__img{
+        padding: 10px;
+    }
+    &__btn{
+        border: none;
+        outline: none;
+        height: 50px;
+        margin-top: 15px;
+        margin-left: 20px;
+        background-color: #fff;
+    }
+    &__title{
+        margin: 0px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+    }
+    &__text{
+        margin: 0px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+    }
+}

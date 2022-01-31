@@ -1,19 +1,29 @@
-import '../Header/header.scss';
 import React from 'react';
-import Icon from "../../Assets/Images/Icons/light-mode-icon.svg";
+import '../Header/header.scss';
 import Data from "../../Localization/data";
+import { Context } from '../../Context/localization'
+import { Context as ThemeContext } from '../../Context/theme'
 
-function Header({lang,setLang}) {
+function Header() {
+
+  const { state, setState } = React.useContext(Context);
+  const { theme, setTheme } = React.useContext(ThemeContext);
+  console.log(theme);
+
   return (
     <>
     <div className='header__wrapper border-bottom border-2'>
-        <p className='header__title'>{Data[lang].header.title}</p>
-        <select className='header__select' value={lang} onChange={(evt) => setLang(evt.target.value)}>
+        <p className='header__title'>{Data[state].header.title}</p>
+        <select className='header__select-lang' value={state} onChange={(evt) => setState(evt.target.value)}>
           <option value="en">EN</option>
           <option value="ru">RU</option>
           <option value="uz">UZ</option>
         </select>
-        <img className='header__img' src={Icon} alt="light-mode" />
+
+        <select className='header__select-theme' value={theme} onChange={(evt) => setTheme(evt.target.value)}>
+          <option value="light">light</option>
+          <option value="dark">dark</option>
+        </select>
     </div>
     </>
   );

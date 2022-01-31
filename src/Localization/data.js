@@ -19,6 +19,15 @@ const data = {
 		main: {
 			state: "Nimalar bo'lyapti",
 			delete:"Ochirish",
+			edit: "Tahrirlash",
+			born:"Tug'ilgan",
+			join:"Qo'shilgan",
+			follow:"Obuna Bo'lgan",
+			follower:"Obunachilar",
+			tweets:"Tvitlar",
+			replies:"Tvitlar & Javoblar",
+			media:"Ommaviy Axborot",
+			lokes:"Layklar",
 		},
 
 		aside: {
@@ -67,6 +76,15 @@ const data = {
 		main: {
 			state: "Что случилось",
 			delete:"Удалить",
+			edit: "Редактировать",
+			born:"Родилься",
+			join:"Присоединился",
+			follow:"Подписки",
+			follower:"Подписчики",
+			tweets:"Твиты",
+			replies:"Твиты & Отзывы",
+			media:"Медия",
+			likes:"Лайки",
 		},
 
 		aside: {
@@ -115,6 +133,15 @@ const data = {
 		main: {
 			state: "What's happening",
 			delete:"Delete",
+			edit: "Edit profile",
+			born:"Born",
+			join:"Joined",
+			follow:"Following",
+			follower:"Followers",
+			tweets:"Tweets",
+			replies:"Tweets & replies",
+			media:"Media",
+			lokes:"Likes",
 		},
 
 		aside: {

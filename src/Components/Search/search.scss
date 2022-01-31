@@ -1,0 +1,22 @@
+.search{
+    width: 350px;
+    height: 55px;
+    background: #e5f3f7;
+    border-radius: 31px;
+    outline: none;
+    border: none;
+    position: relative;
+    padding-left:20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+}
+.search::placeholder{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #5C6C79;
+    background-image: url(../../Assets/Images/Icons/search-icon.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 40px;
+}
