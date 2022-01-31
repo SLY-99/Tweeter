@@ -14,13 +14,13 @@ function Header() {
     <>
     <div className='header__wrapper border-bottom border-2'>
         <p className='header__title'>{Data[state].header.title}</p>
-        <select className='header__select-lang' value={state} onChange={(evt) => setState(evt.target.value)}>
+        <select className='header__select-lang' defaultValue={state} onChange={(evt) => setState(evt.target.value)}>
           <option value="en">EN</option>
           <option value="ru">RU</option>
           <option value="uz">UZ</option>
         </select>
 
-        <select className='header__select-theme' value={theme} onChange={(evt) => setTheme(evt.target.value)}>
+        <select className='header__select-theme' defaultValue={state} onChange={(evt) => setTheme(evt.target.value)}>
           <option value="light">light</option>
           <option value="dark">dark</option>
         </select>

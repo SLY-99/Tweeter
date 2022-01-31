@@ -19,19 +19,19 @@ function Sign({refjon}) {
         <p className='sign__text'>Facilisi sem pulvinar velit nunc, gravida scelerisque amet nibh sit. Quis bibendum ante phasellus metus.Pretium id ullamcorper blandit viverra dignissim eget tellus. Nibh mi massa in molestie a sit. Elit congue.</p>
         <div className='sign__select'>
         <select className='sign__month'>
-            <option selected hidden>Month</option>
+            <option defaultValue="month" hidden>Month</option>
             <option value="january">January</option>
             <option value="february">February</option>
             <option value="march">March</option>
         </select>
         <select className='sign__day'>
-            <option selected hidden>Day</option>
+            <option defaultValue="day" hidden>Day</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
         </select>
         <select className='sign__day'>
-            <option selected hidden>Year</option>
+            <option defaultValue="year" hidden>Year</option>
             <option value="2022">2022</option>
             <option value="2021">2021</option>
             <option value="2020">2020</option>
